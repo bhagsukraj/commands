@@ -9,3 +9,11 @@ $ git pull origin master
 
 4.How to get the status of files in git?
 $ git status
+
+5.How to add files to the index?
+$ git add gitCommands.txt
+
+6.How to commit files to the github
+
+
+
