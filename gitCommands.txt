@@ -1,0 +1,11 @@
+1.How to initialize git in the folder you are working
+$ git init
+
+2.How to sync central repository with local repository by adding origin
+$ git remote add origin 'https://github.com/bhagsukraj/pythonMysql.git'
+
+3.How to pull files from central repository?
+$ git pull origin master
+
+4.How to get the status of files in git?
+$ git status

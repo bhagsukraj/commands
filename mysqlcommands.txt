@@ -1,0 +1,26 @@
+1.How to make an initial connectin to the mysql server
+mysql> -u root -p
+
+2.Show databases
+mysql>show databases;
+
+3.create database
+mysql>create database raviDb;
+
+4.use database
+mysql>use raviDb;
+
+5.create table inside a database;
+mysql>create table ravidb1(time int(13), username varchar(30), tweet varchar(130));
+
+6.Show tables inside a database
+mysql>show tables;
+
+7.Describe table will display the structure of the table
+mysql>describe raviDb1;
+
+8.Insert data into table
+mysql>insert into raviDb1 values (12345678, 'ravi', 'Hello India');
+
+9.How to read the data from the table
+mysql>select * from raviDb1 ;
