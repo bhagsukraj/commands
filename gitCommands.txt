@@ -24,3 +24,5 @@ $ git branch firstbranch
 
 9.How to go into the branch
 $ git checkout firstbranch
+
+10.
