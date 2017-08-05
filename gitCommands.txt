@@ -30,3 +30,9 @@ $ ssh-keygen
 
 11.How to activate the SSH key in the git hub?
 $ ssh -T git@github.com
+
+12.How to push code to github(firstbranch suggests to create a new branch)
+$ git push origin firstbranch
+
+13.How to check git config
+$ git config --list
