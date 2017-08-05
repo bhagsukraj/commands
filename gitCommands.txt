@@ -25,4 +25,8 @@ $ git branch firstbranch
 9.How to go into the branch
 $ git checkout firstbranch
 
-10.How to
+10.How to create public ssh key?After key generation paste it in SSH keys in github
+$ ssh-keygen
+
+11.How to activate the SSH key in the git hub?
+$ ssh -T git@github.com
