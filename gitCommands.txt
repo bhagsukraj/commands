@@ -1,38 +1,54 @@
-1.How to initialize git in the folder you are working
+1.How to initialize git in the folder you are working?
 $ git init
 
-2.How to sync central repository with local repository by adding origin
+1.1.How to undo git from the folder.
+$ rm -rf .git
+
+2.How to sync central repository with local repository by adding origin?
 $ git remote add origin 'https://github.com/bhagsukraj/pythonMysql.git'
 
-3.How to pull files from central repository?
+3.1.How to pull files from central repository?
 $ git pull origin master
+
+3.2.How to clone a folder to the current directory?
+$ git clone https://github.com/bhagsukraj/gitTests.git
 
 4.How to get the status of files in git?
 $ git status
 
-5.How to add files to the index?
+5.How to add files to the stagin area or index?
 $ git add gitCommands.txt
 
-6.How to commit files to the github(-a for committin all files, -m to provide mandatory msg)
-$ git commit -a -m 'commit complete'
+5.1.How to remove files from staging area?
+$ git reset gitTest3.txt
 
-7.How to add all files in one shot to the index(-A indicates all files)
+5.2.How to add all files in one shot to the index?
 $ git add -A
+(-A indicates all files)
 
-8.How to create new branch under master
+6.How to commit files to the git repository?
+$ git commit -a -m 'commit complete'
+(-a for committin all files, -m to provide mandatory msg)
+
+7.How to create new branch under master
 $ git branch firstbranch
 
-9.How to go into the branch
+7.1.How to go into the branch
 $ git checkout firstbranch
 
-10.How to create public ssh key?After key generation paste it in SSH keys in github
+8.1.How to create public ssh key?After key generation paste it in SSH keys in github
 $ ssh-keygen
 
-11.How to activate the SSH key in the git hub?
+8.2.How to activate the SSH key in the git hub?
 $ ssh -T git@github.com
 
-12.How to push code to github(firstbranch suggests to create a new branch)
+9.How to push code to github(firstbranch suggests to create a new branch)
 $ git push origin firstbranch
 
-13.How to check git config
+10.How to check git config
 $ git config --list
+
+11.How to ignore some files.
+$ touch .gitignore -- (Creates gitignore file that will contain patterns)
+
+12.
