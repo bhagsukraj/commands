@@ -13,7 +13,10 @@ $ git status
 5.How to add files to the index?
 $ git add gitCommands.txt
 
-6.How to commit files to the github
+6.How to commit files to the github(-a for committin all files, -m to provide mandatory msg)
+$ git commit -a -m 'commit complete'
 
+7.How to add all files in one shot to the index(-A indicates all files)
+$ git add -A
 
-
+8.How to create a new branch
