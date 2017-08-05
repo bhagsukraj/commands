@@ -24,3 +24,5 @@ mysql>insert into raviDb1 values (12345678, 'ravi', 'Hello India');
 
 9.How to read the data from the table
 mysql>select * from raviDb1 ;
+
+10.
