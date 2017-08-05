@@ -19,6 +19,8 @@ $ git commit -a -m 'commit complete'
 7.How to add all files in one shot to the index(-A indicates all files)
 $ git add -A
 
+8.How to create new branch under master
+$ git branch firstbranch
 
-
-
+9.How to go into the branch
+$ git checkout firstbranch
