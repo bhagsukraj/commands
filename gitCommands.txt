@@ -48,6 +48,12 @@ $ ssh -T git@github.com
 9.How to push code to github(firstbranch suggests to create a new branch)
 $ git push origin firstbranch
 
+9.1.How to make a certain path default for default push and pull
+$ git push -u origin master(After this statement the below statements can be run)
+$ git push
+$ git pull
+
+
 10.How to check git config
 $ git config --list
 
