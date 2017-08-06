@@ -33,17 +33,18 @@ $ git add -A
 $ git commit -a -m 'commit complete'
 (-a for committin all files, -m to provide mandatory msg)
 
-7.1.How to create new branch under master
+7.1.How to create new branch under master?
 $ git branch firstbranch
 
-7.2.How to go into the branch
+7.2.How to go into the branch?
 $ git checkout firstbranch
 
-7.3.How to see all the branches for the folder
+7.3.How to see all the branches for the folder?
 $ git branch -a
 
-8.1.How to create public ssh key?After key generation paste it in SSH keys in github
+8.1.How to create public ssh key?
 $ ssh-keygen
+After key generation paste it in SSH keys in github
 
 8.2.How to activate the SSH key in the git hub?
 $ ssh -T git@github.com
