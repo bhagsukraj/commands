@@ -42,6 +42,12 @@ $ git checkout firstbranch
 7.3.How to see all the branches for the folder?
 $ git branch -a
 
+7.4.How to delete a branch if you are sure?
+$ git branch -D firstbranch
+
+7.5.How to delete a remote branch?
+$ git push origin --delete firstbranch
+
 8.1.How to create public ssh key?
 $ ssh-keygen
 After key generation paste it in SSH keys in github
