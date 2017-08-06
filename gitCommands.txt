@@ -54,4 +54,4 @@ $ git config --list
 11.How to ignore some files.
 $ touch .gitignore -- (Creates gitignore file that will contain patterns)
 
-12.
+12.How
