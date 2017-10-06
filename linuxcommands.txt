@@ -59,3 +59,5 @@ $ nano file1.txt
 
 7.2 file display
 $ cat file1.txt
+
+7.3
