@@ -8,3 +8,16 @@ $ ls
 $ /home/username
 
 2.2 Linux file system
+$ /root -- this is root directory
+$ /home -- this is home directory
+
+3.1 Create file in the folder
+$ touch somefile.txt
+
+3.2 open and view file
+$ cat somefile.txt
+
+3.3 create directory
+$ mkdir dir1
+
+3.4 move file to directory
