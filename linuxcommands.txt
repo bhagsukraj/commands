@@ -6,3 +6,5 @@ $ ls
 
 2.1 What does ~ stand for?
 $ /home/username
+
+2.2 Linux file system
