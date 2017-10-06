@@ -118,5 +118,3 @@ $ git stash apply stash@{0}
 
 16.4.How to clear the git stash list?
 $ git stash clear
-
-17.
