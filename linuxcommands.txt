@@ -21,3 +21,41 @@ $ cat somefile.txt
 $ mkdir dir1
 
 3.4 move file to directory
+$ mv somefile.txt dir1
+$ cp somefile.txt somefilecopy.txt -- copy the file
+
+3.5 remove file from directory
+$ rm somefile.txt
+
+3.6 remove directory
+$ rmdir dir1
+
+3.7 Delete directory even if it contains files
+$ rm -r dir1
+
+4. How to get the possible options on a command
+$ man rm
+
+5.How to create a link to the file
+$ ln -r file1 file1link
+
+6.1 How to print head lines
+$ head file1.txt
+
+6.2 How to print last lines of a file
+$ tail file1.txt
+$ tail -f file1.txt -- to follow the last lines on the file
+
+6.3 Who is sitting on this system
+$ w
+
+6.4 what is using the most CPU time
+$ top
+
+7.1 File editor
+$ nano file1.txt
+  ^X will exit the file and ask you to save the document.Enter the file name
+  and press enter. That should save the document.
+
+7.2 file display
+$ cat file1.txt
