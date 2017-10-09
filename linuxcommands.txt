@@ -40,3 +40,7 @@ $ echo 'Fascinating India' 1>> file1.txt -- append lines to file
 
 $ cat linuxcommands.txt | grep mkdir -- grep is a search and find command.
 $ grep mkdir linuxcommands.txt
+
+$ sudo apt-get update -- just update all softwares
+$ sudo apt-get upgrades -- just upgrade all softwares
+$ apt-get search tmux -- searches for software
