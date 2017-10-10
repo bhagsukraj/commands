@@ -72,3 +72,8 @@ $ tail /etc/shadow    -- shows if the user is locked or not. If '!' is present
       before the passwd the account is locked.
 
 $ kill -l -- lists all commands to kill processes
+States of processes
+running - process that is running
+sleeping - process that is sleeping and waiting to be started
+stopped - process that is stopped
+zombie - process that has completed execution but waiting to finish.
