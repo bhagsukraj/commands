@@ -29,7 +29,8 @@ $ tail -f file1.txt -- Follow the last lines on the file
 $ w -- which user is sitting in the system
 $ top -- top processes
 $ ps aux -- list
-$ ps aux | less -- list processes with pagenationd
+$ ps aux | less -- list process
+es with pagenationd
 $ ls linuxcommands.txt && echo 'Superb success' -- chaining commands
 
 $ nano file1.txt -- open files to edit
@@ -38,9 +39,36 @@ $ echo 'Incredible india' 1> file1.txt -- overwrite file with text
 $ echo 'Fascinating India' 1>> file1.txt -- append lines to file
         0 - stdin 1 - stdout 2 - stderr
 
-$ cat linuxcommands.txt | grep mkdir -- grep is a search and find command.
+
 $ grep mkdir linuxcommands.txt
 
 $ sudo apt-get update -- just update all softwares
-$ sudo apt-get upgrades -- just upgrade all softwares
-$ apt-get search tmux -- searches for software
+$ sudo ap-get upgrades -- just upgrade all softwares
+$ apt-cache search tmux -- searches for software
+$ sudo apt-get install tmux -- install software
+$ sudo apt-get remove tmux -- to uninstall software
+$ sudo add-apt-repository ppa:xxx/emacs
+$ sudo apt-get install emacs -- install emacs
+
+drwxrwxr-x  --  d - directory/File r- read, w - write , x - execute
+drwx - Owner rights
+rwx  - owner groups rights
+r-x  - other rights
+chmod - 7 - rwx , 6 - rw- , 5 - r-x, 4 - r--, 3 - -wx, 2 - -w-, 1 - --x, 0 - ---
+$ chmod 777 -- Owner rights/owner group rights/other's rights
+$ chown owner:group -- to change the owner and group of the files/directories
+
+$ sudo root -i  -- This is to help login as root
+$ less /etc/shadow -- displays the last few lines of the file
+$ useradd - add user
+$ userdel - delete user
+$ useradd -m -d /home/soujanya -s /bin/bash soujanya - adds user soujanya
+            creates a folder for soujanya , defines default shell and default
+            user.
+$ passwd soujanya -- to set passwd for new user
+$ usermod -L soujanya -- to lock the account
+$ usermod -U soujanya -- to unlock the account
+$ tail /etc/shadow    -- shows if the user is locked or not. If '!' is present
+      before the passwd the account is locked.
+
+$ kill -l -- lists all commands to kill processes
