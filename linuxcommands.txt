@@ -53,6 +53,7 @@ r-x  - other rights
 chmod - 7 - rwx , 6 - rw- , 5 - r-x, 4 - r--, 3 - -wx, 2 - -w-, 1 - --x, 0 - ---
 $ chmod 777 -- Owner rights/owner group rights/other's rights
 $ chown owner:group -- to change the owner and group of the files/directories
+$ chmod +x bashsh1.sh -- add execution permission to the file
 
 $ sudo root -i  -- This is to help login as root
 $ less /etc/shadow -- displays the last few lines of the file
@@ -106,3 +107,5 @@ $ var1='India' -- assignment of a variable , dont leave spaces
 $ var2=20 -- assignment of a number to a variable , dont leave spaces
 $ echo " i am $var2 years old" -- replaces $var2 with the variable, ensure double quotes
 $ echo "There are `wc -l < /etc/group` lines available" -- Anything inside ` ` is a command.
+$ ./bashsh1.sh -- executes the bash script
+$ source bashsh1.sh -- Executes the script as well as sources the variables into shell
