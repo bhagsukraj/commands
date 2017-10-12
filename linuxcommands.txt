@@ -22,6 +22,7 @@ $ tail file1.txt -- print last few lines
 $ tail -f file1.txt -- Follow the last lines on the file
 $ w -- which user is sitting in the system
 $ grep mkdir linuxcommands.txt
+$ tree Documents -- This command will display the folder contents in tree
 
 Piping, Chaining, Directing Output and Input
 
@@ -79,8 +80,8 @@ Linux File system
 
 $ ls /bin -- Commands ship with basic OS
 $ ls /etc -- Configuration files for the base system and all the software
-$ ls /boot -- core linux files like kernel files
-$ ls /dev -- everythin related to dev like printers / hard disks etc
+$ ls /boot --core linux files like kernel files
+$ ls /dev -- related to dev like printers / hard disks etc
 $ ls /tmp -- contains all temporary files
 $ ls /proc -- process related folder
 $ ls /home -- All the home files
@@ -90,3 +91,15 @@ crontab
 
 $ crontab -l -- to open a crontab if jobs are already scheduled
 $ crontab -e -- to open in editor if the user does not have defined cronjobs
+
+Archiving
+$ tar -zcvf git.tar.gz git/
+$ tar -zxf commands.tar.gz
+
+Bash
+
+$ echo 'Hello India' > bashout1.txt -- push the output to a file
+$ (echo 'Hello world' | wc -l) && (echo 'sucess')
+$ echo $HOME -- Anything preceded by $ is a variable in bash
+$ var1='India' -- assignment of a variable , dont leave spaces
+$ var2=20 -- assignment of a number to a variable , dont leave spaces
