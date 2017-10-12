@@ -23,6 +23,7 @@ $ tail -f file1.txt -- Follow the last lines on the file
 $ w -- which user is sitting in the system
 $ grep mkdir linuxcommands.txt
 $ tree Documents -- This command will display the folder contents in tree
+$ which bash -- locate a command
 
 Piping, Chaining, Directing Output and Input
 
@@ -103,3 +104,5 @@ $ (echo 'Hello world' | wc -l) && (echo 'sucess')
 $ echo $HOME -- Anything preceded by $ is a variable in bash
 $ var1='India' -- assignment of a variable , dont leave spaces
 $ var2=20 -- assignment of a number to a variable , dont leave spaces
+$ echo " i am $var2 years old" -- replaces $var2 with the variable, ensure double quotes
+$ echo "There are `wc -l < /etc/group` lines available" -- Anything inside ` ` is a command.
