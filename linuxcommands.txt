@@ -22,8 +22,10 @@ $ tail file1.txt -- print last few lines
 $ tail -f file1.txt -- Follow the last lines on the file
 $ w -- which user is sitting in the system
 $ grep mkdir linuxcommands.txt
-$ tree Documents -- This command will display the folder contents in tree
+$ tree Documents -- This command will edisplay the folder contents in tree
 $ which bash -- locate a command
+$ script myscript.log -- will start the script recording/ exit with 'exit' command
+$ alias gp='git push' -- this command will set aliases for commands
 
 Piping, Chaining, Directing Output and Input
 
@@ -109,3 +111,5 @@ $ echo " i am $var2 years old" -- replaces $var2 with the variable, ensure doubl
 $ echo "There are `wc -l < /etc/group` lines available" -- Anything inside ` ` is a command.
 $ ./bashsh1.sh -- executes the bash script
 $ source bashsh1.sh -- Executes the script as well as sources the variables into shell
+$ ./basharguments.sh ravi kiran india -- this is the way to pass arguments into bash script
+$
