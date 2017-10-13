@@ -25,7 +25,7 @@ $ grep mkdir linuxcommands.txt
 $ tree Documents -- This command will edisplay the folder contents in tree
 $ which bash -- locate a command
 $ script myscript.log -- will start the script recording/ exit with 'exit' command
-$ alias gp='git push' -- this command will set aliases for commands
+$ alias gp='git push' -- this command will set aliases for commands.
 
 Piping, Chaining, Directing Output and Input
 
