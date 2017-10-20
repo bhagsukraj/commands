@@ -26,12 +26,16 @@ $ tree Documents -- This command will edisplay the folder contents in tree
 $ which bash -- locate a command
 $ script myscript.log -- will start the script recording/ exit with 'exit' command
 $ alias gp='git push' -- this command will set aliases for commands.
+$ unalias gp -- to unalias
+$ lsof -- gives list of all open files
+$ lsof -i :80 -- which processes are listening to port 80
 
 Piping, Chaining, Directing Output and Input
 
 $ top -- top processessuiBa
 $ ps aux -- list
 $ ps aux | less -- list processes with pagenationd
+$ ps aux | grep nginx
 $ ls linuxcommands.txt && echo 'Superb success' -- chaining commands
 $ echo 'Incredible india' 1> file1.txt -- overwrite file with text
 $ echo 'Fascinating India' 1>> file1.txt -- append lines to file 0 - stdin 1 - stdout 2 - stderr
@@ -59,7 +63,9 @@ $ chmod +x bashsh1.sh -- add execution permission to the file
 
 $ sudo root -i  -- This is to help login as root
 $ less /etc/shadow -- displays the last few lines of the file
-$ useradd - add user
+$ adduser rk -- adds user and asks for a password.
+$ gpasswd -a rk sudo-- adds user to super user group sudo
+$ useradd ravi - add user
 $ userdel - delete user
 $ useradd -m -d /home/soujanya -s /bin/bash soujanya - adds user soujanya
             creates a folder for soujanya , defines default shell and default
@@ -111,5 +117,14 @@ $ echo " i am $var2 years old" -- replaces $var2 with the variable, ensure doubl
 $ echo "There are `wc -l < /etc/group` lines available" -- Anything inside ` ` is a command.
 $ ./bashsh1.sh -- executes the bash script
 $ source bashsh1.sh -- Executes the script as well as sources the variables into shell
-$ ./basharguments.sh ravi kiran india -- this is the way to pass arguments into bash script
-$
+$ ./basharguments.sh ravi kiran india -- this is the way to pass   into bash script
+
+monitoring
+$ sudo apt-get install monit
+
+Deploying flask application to the cloud
+$ adduser rk -- adds new user / will ask to setup passwd as well
+$ gpasswd -a rk sudo -- adds the new user to the super user user group.
+$ ssh root@ip -- ssh into server as root
+$ ssh rk@ip -- this will ssh into the server with rk as user
+$ ssh-keygen -- this will generate the private key
