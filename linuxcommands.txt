@@ -128,3 +128,6 @@ $ gpasswd -a rk sudo -- adds the new user to the super user user group.
 $ ssh root@ip -- ssh into server as root
 $ ssh rk@ip -- this will ssh into the server with rk as user
 $ ssh-keygen -- this will generate the private key
+$ mkdir .ssh -- Make ssh directory
+$ chmod 700 .ssh -- to ensure that only author can read/execute
+$ nano .ssh/authorized_keys -- to open editor and paste the public key, The public is available in .ssh folder
