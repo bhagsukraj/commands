@@ -25,5 +25,5 @@ list1 = [ 1 , 100 ,200 , 300, 400]
 for i in list1 :
     print (i)
 #range function
-for i in range(1,10):
+for i in range(1,5):
     print('range',i)
