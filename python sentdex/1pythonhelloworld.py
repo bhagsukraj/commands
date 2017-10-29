@@ -27,3 +27,10 @@ for i in list1 :
 #range function
 for i in range(1,5):
     print('range',i)
+
+if (x < y):
+    print('x is greater than y')
+elif(x == y):
+    print('x is equal to y')
+else:
+    print('x is less than y')
