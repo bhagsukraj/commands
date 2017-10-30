@@ -14,3 +14,5 @@ def func2(par1,par2):
     print('Parameter 3 value is:',par3)
 
 func2(3,4)
+
+#function 3
