@@ -19,7 +19,8 @@ func2(3,4)
 x = 3
 def func3():
     global x
-    print('The value of global variable x is:',x)
+#    import pdb; pdb.set_trace()
+    print('awesome')
     y = 'awesome place'
     return y
 
