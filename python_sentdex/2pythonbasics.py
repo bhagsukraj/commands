@@ -15,4 +15,13 @@ def func2(par1,par2):
 
 func2(3,4)
 
-#function 3
+#function 3 with global variables
+x = 3
+def func3():
+    global x
+    print('The value of global variable x is:',x)
+    y = 'awesome place'
+    return y
+
+y = func3()
+print(y)
