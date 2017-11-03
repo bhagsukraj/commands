@@ -1,8 +1,8 @@
 #!python3
 
-text = open('exfile1.txt','r').read()
+#text = open('exfile1.txt','r').read()
 
-print(text)
+#print(text)
 
 textlist = open('exfile1.txt','r').readlines()
 for i in textlist:
