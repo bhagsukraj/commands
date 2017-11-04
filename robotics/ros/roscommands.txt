@@ -1,0 +1,17 @@
+Setup
+
+$ sudo apt-get install catkin
+$ source /opt/ros/kinetic/setup.bash -- Setup ros kinetic
+$ mkdir -p ~/catkin_ws/src -- create catkin workspace directory
+$ cd ~/catkin_ws/src -- navigate into the workspace directory
+$ catkin_init_workspace -- command to create CMakeLists.txt file
+$ cd ~/catkin_ws -- navigate to the workspace
+$ catkin_make -- create build and level/build for c++ prog/level has files for setup config
+$ source devel/setup.bash --run setup
+$ cd ~/catkin_ws/src -- navigate to src folder
+$ catkin_create_pkg myfirstcode rospy -- create new folder myfirstcode/depends on rospy/
+                                         /create CMakeLists.txt package.xml
+
+roscommands
+
+$ cd /opt/ros/kinetic/share/rospy_tutorials                                         
