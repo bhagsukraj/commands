@@ -23,9 +23,7 @@ $ git push origin firstbranch -- push code to first branch
 $ git push -u origin master(After this statement the below statements can be run)
 $ git push
 $ git pull
-
-10.1.How to check git config
-$ git config --list
+$ git config -- list
 
 10.2.Git config lines for meld
 git config --global diff.tool meld
