@@ -18,4 +18,6 @@ $ cd /opt/ros/kinetic/share/rospy_tutorials
 $ roscore -- to initiate ros
 $ rosrun rospy_tutorials talker -- runs the starter node
 $ rosrun rospy_tutorials listener -- runs the listener node
-$ rqt_graph -- to display the diagram linking talker/listener                               
+$ rqt_graph -- to display the diagram linking talker/listener
+
+$                         
