@@ -19,5 +19,10 @@ $ roscore -- to initiate ros
 $ rosrun rospy_tutorials talker -- runs the starter node
 $ rosrun rospy_tutorials listener -- runs the listener node
 $ rqt_graph -- to display the diagram linking talker/listener
-
-$                         
+$ rostopic list -- displays the list of ros topics
+$ source devel/setup.bash -- runs the setup file of the catkin workspacec
+$ chmod u+x 1topic_publisher.py -- set executable permissions for the file
+$ rosrun myfirstcode 1topic_publisher.py -- Run the file as ros node
+$ rostopic list -- List out all current topics
+$ rostopic echo counter -n 5 -- echo's out the values of the topic counter upto 5 no's
+$ rostopic info counter -- give information about the counter

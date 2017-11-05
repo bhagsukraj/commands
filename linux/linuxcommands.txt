@@ -49,7 +49,8 @@ $ sudo apt-get install tmux -- install software
 $ sudo apt-get remove tmux -- to uninstall software
 $ sudo add-apt-repository ppa:xxx/emacs
 $ sudo apt-get install emacs -- install emacs
-
+$ sudo add-apt-repository ppa:librecad-dev/librecad-daily -- add repository to linux
+$ sudo add-apt-repository -r ppa:librecad-dev/librecad-daily -- remove repository from linux
 file permissions and users
 
 drwxrwxr-x  --  d - directory/File r- read, w - write , x - execute
