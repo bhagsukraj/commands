@@ -24,56 +24,23 @@ $ git push -u origin master(After this statement the below statements can be run
 $ git push
 $ git pull
 $ git config -- list
-
-10.2.Git config lines for meld
-git config --global diff.tool meld
-git config --global difftool.meld.path "/usr/bin/meld"
-git config --global difftool.prompt false
-
-git config --global merge.tool meld
-git config --global mergetool.meld.path "/usr/bin/meld"
-git config --global mergetool.prompt false
-
-10.3.How to launch a diff tool comparing origin/master and current branch?
-$ git difftool origin/master
-
-10.4.How to launch a diff tool comparing head and current branch?
-$ git difftool master
-
-10.5.How to launch a diff tool comparing comparing committed and uncommitted
-changes of any branch ?
-$ git difftool -t meld
-
-10.6.How to check the global and local config
-$ git config --global -l
-$ git config --local -l
-
-11.How to ignore some files.
-$ touch .gitignore -- (Creates gitignore file that will contain patterns)
-
-12.How to get the status after git commit?
-$ git stat
-
-13.How to move the commits on one branch to another brach or cherry-pick?
-$ git cherry-pick 9d10fc70
-the last arguments is the part of a string from the commited instance.
-
-14.How to clean all the untracked files from the working directory?
-$ git clean -df
-
-15.How to get know the exact sequence of stuff that i have been doing?
-$ git reflog
-
-16.1.How to stash uncommitted changes?
-$ git stash save 'stashing changes'
-save 'stashing changes' will save the stash with that comment
-
-16.2.How to check the stash list?
-$ git stash list
-
-16.3.How to get back the stashed stuff?
-$ git stash apply stash@{0}
-'stash@{0}' is obtained from the git stash list command
-
-16.4.How to clear the git stash list?
-$ git stash clear
+$ git config --global diff.tool meld
+$ git config --global difftool.meld.path "/usr/bin/meld"
+$ git config --global difftool.prompt false
+$ git config --global merge.tool meld
+$ git config --global mergetool.meld.path "/usr/bin/meld"
+$ git config --global mergetool.prompt false
+$ git difftool origin/master -- diff tool to compare origin and master
+$ git difftool master -- Compare head and current branch
+$ git difftool -t meld -- compare committed and uncommitted changes of a branch
+$ git config --global -l -- Check global config
+$ git config --local -l -- check local config
+$ touch .gitignore -- Creates gitignore file that will contain patterns
+$ git cherry-pick 9d10fc70 - move the commits on one branch to another branch
+$ git clean -df -- clean all the untracked files from directory
+$ git reflog -- get the exact sequence of stuff that i have been doing.
+$ git stash save 'stashing changes' - stash uncommitted changes
+$ git stash list -- Check the stash list
+$ git stash apply stash@{0} -- get back stashed stuff
+                      'stash@{0}' is obtained from the git stash list command
+$ git stash clear -- clear git stash
