@@ -20,8 +20,6 @@ $ git push origin --delete firstbranch
 $ ssh-keygen -- generate public key
 $ ssh -T git@github.com -- activate the ssh key at the t-hub
 $ git push origin firstbranch -- push code to first branch
-
-9.1.How to make a certain path default for default push and pull
 $ git push -u origin master(After this statement the below statements can be run)
 $ git push
 $ git pull
