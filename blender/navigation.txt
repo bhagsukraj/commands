@@ -1,0 +1,4 @@
+~ + mouse pad -- rotate view
+q + mouse pad -- move view
+e + mouse pad -- zoom in by scrolling up zoom out by scrolling down
+5 -- perspective of a picture is changed to user ortho and back to user perspective
