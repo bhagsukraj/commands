@@ -5,7 +5,7 @@ e + mouse pad -- zoom in by scrolling up zoom out by scrolling down
 1 -- front view
 3 -- left view
 Ctrl + 3 right view
-7 -- top
+7 -- --
 ctrl + 7 -- bottom
 9 -- switches to opposite view whichever view that it is
 2 - rotates upwards on x -axis
@@ -15,3 +15,22 @@ ctrl + 7 -- bottom
 0 -- switch between camera mode and viewport mode
 T -- Toolbar
 N -- properties
+B -- Box Select
+C -- Circle select
+
+G -- grab an object after selecting it to move it around.
+R -- rotate a selected object left click to confirm right click to cancel
+S -- Scale a selected object left clieck to confirm right click to cancel
+G and X -- to move along x axis
+G and Y -- to move along y axis
+G and Z -- to move along z axis
+R and X -- to rotate along x axis
+R and Y -- to rotate along y axis
+R and Z -- to rotate alongg z axis
+
+H -- Hide elements
+Alt-H
+M -- Move elements to another layer
+
+Shift-C -- To get back the 3D cursor that's lost in the space
+Shift-A -- To add pieces in the 3D frame
