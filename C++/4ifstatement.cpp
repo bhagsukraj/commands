@@ -13,6 +13,6 @@ int main()
     cout << "a is greater than b";
   }else{
     cout << "a is lesser than b";
-  }
+  };
   return 0;
 }
