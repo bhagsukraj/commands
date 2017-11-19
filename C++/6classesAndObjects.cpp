@@ -17,7 +17,7 @@ class myFirstClass{
     void simpleFunc2(int x , int y){
       cout << "\nThe sum on first class is " << x+y << endl ;
       cout << "\nThe second variable is " << var2 ;
-    }
+    };
 };
 
 int main(){
