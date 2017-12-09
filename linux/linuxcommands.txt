@@ -76,6 +76,7 @@ $ usermod -L soujanya -- to lock the account
 $ usermod -U soujanya -- to unlock the account
 $ tail /etc/shadow    -- shows if the user is locked or not. If '!' is present
       before the passwd the account is locked.
+$ su - user2 -- switches to second user after taking passwd
 
 Processes
 
