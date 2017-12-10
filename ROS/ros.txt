@@ -1,0 +1,3 @@
+2.Navigating the ROS filesystem
+
+$ rospack find roscpp -- Find package
