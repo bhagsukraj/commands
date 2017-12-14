@@ -1,3 +1,30 @@
 2.Navigating the ROS filesystem
 
 $ rospack find roscpp -- Find package
+$ roscd roscpp -- directly cd to roscpp folder
+$ pwd -- print working directory
+$ echo $ROS_PACKAGE_PATH -- echo ros package path
+$ rosls roscpp_tutorials -- list out all the contents of the package
+
+3.Creating a ROS Package
+
+$ cd ~/catkin_ws/src -- cd to catkin workspace
+$ catkin_create_pkg beginner_tutorials std_msgs rospy roscpp -- create package with dependencies
+$ cd ~/catkin_ws -- cd to catkin workspace to build workspace
+$ catkin_make -- build workspace
+$ . ~/catkin_ws/devel/setup.bash -- setup workspace in the terminal
+$ rospack depends1 beginner_tutorials --
+
+4.Building a ROS Package
+
+$ source /opt/ros/kinetic/setup.bash -- setup kinetic environ in the terminal window
+$ catkin_make -- build workspace
+
+5.Understanding ROS Nodes
+
+$ roscore -- Start ROS engine
+$ rosnode list -- Print rosnode list
+$ rosrun turtlesim turtlesim_node -- start turtlesim_node program from turtlesim package
+$ rosnode list -- rosnode list
+$ rosrun turtlesim turtlesim_node __name:=my_turtle -- turtlesim node renamed to myturtle
+$ rosnode ping my_turtle
