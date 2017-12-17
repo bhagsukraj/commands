@@ -1,30 +1,21 @@
-2.Navigating the ROS filesystem
+1.Installing and configuring your ROS
 
-$ rospack find roscpp -- Find package
-$ roscd roscpp -- directly cd to roscpp folder
-$ pwd -- print working directory
-$ echo $ROS_PACKAGE_PATH -- echo ros package path
-$ rosls roscpp_tutorials -- list out all the contents of the package
+$ env | grep ROS -- print ROS environment
+$ source /opt/ros/kinetic/setup.bash -- execute the ROS setup file
+$ mkdir -p ~/catkin_ws/ -- Make directory of catkin workspace
+$ cd ~/catkin_ws/ -- Navigate to the newly created catkin_ws
+$ catkin_make -- to make the build folder
 
-3.Creating a ROS Package
+2.Navigating the ROS file system
 
-$ cd ~/catkin_ws/src -- cd to catkin workspace
-$ catkin_create_pkg beginner_tutorials std_msgs rospy roscpp -- create package with dependencies
-$ cd ~/catkin_ws -- cd to catkin workspace to build workspace
-$ catkin_make -- build workspace
-$ . ~/catkin_ws/devel/setup.bash -- setup workspace in the terminal
-$ rospack depends1 beginner_tutorials --
+$ rospack find roscpp -- Find packages
+$ roscd roscpp -- navigate to the package
+$ rosls roscpp -- list out the contents of the package
 
-4.Building a ROS Package
+3.Creating a ROS package
 
-$ source /opt/ros/kinetic/setup.bash -- setup kinetic environ in the terminal window
-$ catkin_make -- build workspace
-
-5.Understanding ROS Nodes
-
-$ roscore -- Start ROS engine
-$ rosnode list -- Print rosnode list
-$ rosrun turtlesim turtlesim_node -- start turtlesim_node program from turtlesim package
-$ rosnode list -- rosnode list
-$ rosrun turtlesim turtlesim_node __name:=my_turtle -- turtlesim node renamed to myturtle
-$ rosnode ping my_turtle
+$ cd ~/catkin_ws/src
+$ catkin_create_pkg begintut std_msgs rospy roscpp
+$ catkin_make -- Build the build folder
+$ rospack depends1 begintut -- find the the package.ensue the workspace is added to the environment
+$ roscd begintut
