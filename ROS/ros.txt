@@ -19,3 +19,24 @@ $ catkin_create_pkg begintut std_msgs rospy roscpp
 $ catkin_make -- Build the build folder
 $ rospack depends1 begintut -- find the the package.ensue the workspace is added to the environment
 $ roscd begintut
+
+5.Understanding ROS Nodes
+
+$ roscore -- Starts the ros engine
+$ rosnode list -- Lists out all the rosnodes
+$ rosnode info /rosout -- Gives info about a certain node
+$ rosrun turtlesim turtlesim_node -- Runs node turtlesim_node of package turtlesim
+$ rosrun turtlesim turtlesim_node __name:=my_turtle
+$ rosrun rqt_graph rqt_graph
+
+6.Understanding ROS service
+
+$ rosservice -- ros comamnd to access services
+$ rosservice type /clear -- Gives the type of the message
+$ rosservice call /clear -- call's a service to clear the background of turtlesim
+$ rosparam set /background_r 150 -- Set background colour
+$ rosparam dump params.yaml -- dump the params file into the folder
+
+7.Using rqt_console and rqt_launch
+
+$
