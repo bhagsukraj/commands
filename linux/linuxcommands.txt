@@ -9,6 +9,7 @@ $ ls -la -- list in line including hidden files
 $ touch somefile.txt -- create file
 $ cat somefile.txt -- open file
 $ nano file1.txt -- open files to edit
+$ gedit ~/.bashrc -- open the file edit mode
 $ mkdir dir1 -- create directory
 $ mv somefile.txt dir1 -- move file to a directory
 $ cp somefile.txt somefilecopy.txt -- copy the file to another file

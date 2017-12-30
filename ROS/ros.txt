@@ -21,7 +21,6 @@ $ rospack depends1 begintut -- find the the package.ensue the workspace is added
 $ roscd begintut
 
 5.Understanding ROS Nodes
-
 $ roscore -- Starts the ros engine
 $ rosnode list -- Lists out all the rosnodes
 $ rosnode info /rosout -- Gives info about a certain node
@@ -30,7 +29,6 @@ $ rosrun turtlesim turtlesim_node __name:=my_turtle
 $ rosrun rqt_graph rqt_graph
 
 6.Understanding ROS service
-
 $ rosservice -- ros comamnd to access services
 $ rosservice type /clear -- Gives the type of the message
 $ rosservice call /clear -- call's a service to clear the background of turtlesim
@@ -39,4 +37,7 @@ $ rosparam dump params.yaml -- dump the params file into the folder
 
 7.Using rqt_console and rqt_launch
 
-$
+8.Using rosed to edit files in ROS
+$ rosed roscpp Logger.msg
+
+9.Creating a ROS msg and srv
