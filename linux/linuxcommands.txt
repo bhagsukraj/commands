@@ -134,3 +134,7 @@ $ ssh-keygen -- this will generate the private key
 $ mkdir .ssh -- Make ssh directory
 $ chmod 700 .ssh -- to ensure that only author can read/execute
 $ nano .ssh/authorized_keys -- to open editor and paste the public key, The public is available in .ssh folder
+
+C++
+$ g++ 2variables.cpp -o 2variables -- compiles the file 2variables.cpp and produces 2variables
+$ ./2variables -- to execute the program
