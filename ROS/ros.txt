@@ -41,3 +41,4 @@ $ rosparam dump params.yaml -- dump the params file into the folder
 $ rosed roscpp Logger.msg
 
 9.Creating a ROS msg and srv
+$
