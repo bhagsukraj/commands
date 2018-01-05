@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-  int age = 18;
+  int age = 20;
 
   switch(age){
     case 10:
@@ -15,5 +15,7 @@ int main(){
     case 18:
       cout << "Adult";
       break;
-  }
+    default:
+      cout << "Honeymoon";
+  };
 }
