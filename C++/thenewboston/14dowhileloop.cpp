@@ -5,7 +5,7 @@ using namespace std;
 int main(){
   int i = 1;
   do{
-    cout << "India is a great country" << endl ;
+    cout << "Wonderful Terrific India" << endl ;
     i++;
   }while(i < 10);
-}
+};

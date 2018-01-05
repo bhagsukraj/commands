@@ -138,3 +138,8 @@ $ nano .ssh/authorized_keys -- to open editor and paste the public key, The publ
 C++
 $ g++ 2variables.cpp -o 2variables -- compiles the file 2variables.cpp and produces 2variables
 $ ./2variables -- to execute the program
+
+Fastlinux
+$ sudo apt-get install bleachbit -- install application to clean cache and odd files and clear diskspace
+$ sudo apt-get install tweak -- to do some lightweight cleanup
+$ sudo apt-get install preload -- to handle some common apps quickly
