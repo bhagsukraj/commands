@@ -6,6 +6,6 @@ using namespace std;
 string x = "outside variable";
 
 int main(){
-  cout << x << endl;
-
+  string x = "internal variable";
+  cout << ::x << endl;
 }
