@@ -14,7 +14,7 @@ class class1{
     };
 };
 
-int main(){  
+int main(){
   class1 class1_obj ;
   class1_obj.printNumber(10);
   class1_obj.printName("Ravi Kiran");
