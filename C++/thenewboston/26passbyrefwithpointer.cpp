@@ -17,8 +17,8 @@ int main(){
 
 void passByValue(int x){
   x = 50;
-}
+};
 
 void passByRef(int *y){
   *y = 30;
-}
+};

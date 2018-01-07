@@ -8,5 +8,5 @@ int main(){
 // * before a variable indicates pointer variable.
   int *fishPointer;
   fishPointer = &a;
-  cout << fishPointer << endl ;
+  cout << fishPointer << endl;
 }
