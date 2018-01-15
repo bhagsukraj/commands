@@ -11,6 +11,7 @@ int main(){
 
 void swap(int *x , int *y){
   int t = *x ;
+
   cout << "The pointer of x is " << x << endl;
   cout << "The pointer of y is " << y << endl;
   *x = *y ;
