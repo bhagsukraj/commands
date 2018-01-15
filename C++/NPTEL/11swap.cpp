@@ -17,4 +17,4 @@ void swap(int *x , int *y){
   *y = t;
   cout << "The value of x is " << *x << endl;
   cout << "The value of y is " << *y << endl;
-}
+};
