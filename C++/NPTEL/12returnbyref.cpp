@@ -8,7 +8,7 @@ int return_by_val(int &x){
   return x;
 }
 
-const int& return_by_ref(int &x){
+int& return_by_ref(int &x){
   return x;
 }
 
@@ -19,7 +19,7 @@ int main(){
   cout <<"The value of b " << b << endl;
   cout <<"The value of pointer b " << &b << endl;
 
-  const int &c = return_by_val(a);
+  const int &c = return_by_ref(a);
   cout <<"The value of c " << c << endl;
   cout <<"The value of pointer c " << &c << endl;
 }
