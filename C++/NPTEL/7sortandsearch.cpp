@@ -13,9 +13,11 @@ int main(){
     cout << arr[i] << endl;
   };
 
-  int key = 8;
+  int key = 9;
   if ( binary_search (arr , arr+5 , key)){
     cout << "Found";
+  }else{
+    cout << "not found";
   }
 
 };

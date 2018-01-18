@@ -12,5 +12,8 @@ int main(){
   cout << "b = " << b << endl;
 
   a = 30;
-  cout << "b = " << b;
+  cout << "b = " << b << endl;
+
+  b = 40;
+  cout << "a = " << a;
 }

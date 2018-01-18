@@ -4,7 +4,6 @@ inline int func1(int x , int y){ return x * y;}
 
 using namespace std;
 
-
 int main(){
 
   int a = 3 , b ;
