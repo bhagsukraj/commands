@@ -22,4 +22,4 @@ int main(){
   cout << "The value of a " << a << endl ;
   ++a;
   cout << "The value of a " << a << endl ;
-}
+};
