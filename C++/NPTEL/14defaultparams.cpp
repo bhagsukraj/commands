@@ -15,6 +15,8 @@ int main(){
 
   y = return_val();
   cout << y << endl;
-  
+
+  cout << "wonderful ";
+
   return 0 ;
 };
