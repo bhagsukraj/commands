@@ -17,6 +17,5 @@ int main(){
   cout << y << endl;
 
   cout << "wonderful ";
-
   return 0 ;
 };
