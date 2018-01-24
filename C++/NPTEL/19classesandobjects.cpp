@@ -19,6 +19,5 @@ int main(){
 
   double val1 = bo.fetch_val(3,4);
   cout << "This pointer " << val1;
-
   return 0;
 }
