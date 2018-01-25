@@ -10,6 +10,10 @@ class class1{
       cout <<"This is a constructor" << endl;
     };
 
+    ~class1(){
+      cout <<"This is a destructor" << endl;
+    }
+
     void meth1(){
       cout <<"This is a normal method" << endl;
     };
@@ -20,7 +24,7 @@ class class1{
     };
 
     void get_prv(){
-      cout << "The value of i is " << i ;
+      cout << "The value of i is " << i <<endl;
     }
 };
 
