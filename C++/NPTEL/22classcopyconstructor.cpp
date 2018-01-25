@@ -19,7 +19,7 @@ class class1{
 };
 
 int main(){
-  class1 bo1(100,200) ,
+  class1 bo1(100,200),
          bo2(bo1);
 
 
