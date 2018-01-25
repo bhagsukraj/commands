@@ -17,6 +17,5 @@ int main(){
   class1* bo = new class1();
   bo->meth1();
   delete bo;
-  return 0;
-  
+  return 0; 
 }
