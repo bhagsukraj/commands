@@ -17,6 +17,5 @@ int main(){
   class1 bo , bo2;
   bo.print();
   bo2.print();
-
   return 0;
 }
