@@ -18,4 +18,4 @@ int main(){
   bo.print();
   bo2.print();
   return 0;
-}
+};
