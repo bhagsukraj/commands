@@ -15,7 +15,7 @@ class class1{
 };
 
 int main(){
-  const class1 class1_bo;  
+  const class1 class1_bo;
   //a const class cannot call a non constant method
   //so it cannot call meth1 . it can call only meth2
   //it's not possible to change the class data
