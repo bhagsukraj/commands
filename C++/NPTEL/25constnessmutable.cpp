@@ -3,6 +3,7 @@ using namespace std;
 
 class class1{
   private:
+    // a mutable data object can also be changed in a const object
     mutable int x = 10;
 
   public:
