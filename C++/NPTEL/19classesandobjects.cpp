@@ -11,7 +11,6 @@ class class1{
     }
 };
 
-
 int main(){
   class1 bo = { 1.2345 , 2.3456 };
 

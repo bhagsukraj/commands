@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+int i = 10;
+
 namespace app1{
   class class1{
     public:
@@ -22,6 +24,9 @@ namespace app2{
 int main(){
   app1::class1 obj1;
   app2::class1 obj2;
+
+  using namespace app1;
+  cout<<"i " << i;
 
   return 0;
 };
