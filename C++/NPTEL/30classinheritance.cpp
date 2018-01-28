@@ -30,3 +30,6 @@ int main(){
   obj1.meth2();
   return 0;
 };
+
+// compilers will not convert a derived class object into a base class object
+// if the inheritance is private in nature
