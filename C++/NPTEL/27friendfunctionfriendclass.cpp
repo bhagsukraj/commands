@@ -19,6 +19,5 @@ void print(const class1 &obj){
 int main(){
   class1 obj(10);
   print(obj);
-
   return 0;
 };
