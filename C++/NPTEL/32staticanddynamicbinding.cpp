@@ -51,4 +51,4 @@ int main(){
   rd.g();
 
   return 0;
-}
+};
