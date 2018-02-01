@@ -15,6 +15,7 @@ print(y)
 y.remove(4)
 print(y)
 #print lists by index.
+print('1 to 4')
 print(y[1:4])
 #prrint list from the other side
 print(y[1:-2])
