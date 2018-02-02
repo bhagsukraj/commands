@@ -19,4 +19,4 @@ int main(){
   class2 obj;
   obj.meth1();
   return 0;
-}
+};
