@@ -14,7 +14,7 @@ class class2 : public class1{
       cout << "Concrete class" ;
     };
 };
-
+34
 int main(){
   class2 obj;
   obj.meth1();
