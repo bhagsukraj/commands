@@ -4,7 +4,7 @@ $ env | grep ROS -- print ROS environment
 $ source /opt/ros/kinetic/setup.bash -- execute the ROS setup file
 $ mkdir -p ~/catkin_ws/ -- Make directory of catkin workspace
 $ cd ~/catkin_ws/ -- Navigate to the newly created catkin_ws
-$ catkin_make -- to make the build folder
+$ catkin build -- to make the build folder
 
 2.Navigating the ROS file system
 
@@ -15,10 +15,11 @@ $ rosls roscpp -- list out the contents of the package
 3.Creating a ROS package
 
 $ cd ~/catkin_ws/src
-$ catkin_create_pkg begintut std_msgs rospy roscpp
-$ catkin_make -- Build the build folder
+$ catkin create pkg begintut -- Create packages
+$ catkin create pkg mywork --catkin-deps roscpp --- Creates package with cpp linkages
+$ catkin build -- Build the build folder
 $ rospack depends1 begintut -- find the the package.ensue the workspace is added to the environment
-$ roscd begintut
+$ roscd begintut -- Navigate to begintut whereever it is in the ROS workspaces
 
 5.Understanding ROS Nodes
 $ roscore -- Starts the ros engine

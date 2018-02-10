@@ -37,5 +37,4 @@ int main(){
   obj.class1::meth1();
 
   return 0;
-
 };
