@@ -9,7 +9,7 @@ void print(char * str){
 int main(){
   const char *c = "India is a great country";
 
-  print(const_cast<char *>(c));
+  print(const_cast<char*>(c));
 
   return 0;
 };

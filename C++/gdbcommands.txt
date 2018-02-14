@@ -1,0 +1,8 @@
+#gdb comments.
+$ g++ -g helloworld.cpp -- compiles the code and create executabe a.out
+$ gdb a.out -- start debugger
+$ b main -- put break-point at main module
+$ s + enter -- step into the function
+$ n + enter -- step over the function
+$ q + enter -- step out
+$ p var1 -- prints value of variable var1
