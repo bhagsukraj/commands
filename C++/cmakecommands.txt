@@ -1,0 +1,3 @@
+$ cmake -H. -B_builds -G "Unix Makefiles" -- To generate native build files
+$ make -- this statement inside _builds is going to build the file
+$ cmake --build _builds -- builds the files
