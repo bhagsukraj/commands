@@ -1,3 +1,4 @@
 $ cmake -H. -B_builds -G "Unix Makefiles" -- To generate native build files
-$ make -- this statement inside _builds is going to build the file
-$ cmake --build _builds -- builds the files
+$ cmake --build _builds -- builds the executables
+$ message("source : ${PROJECT_SOURCE_DIR}") -- Directory of source code
+$ message("binary : ${PROJECT_BINARY_DIR}") -- Directory where binaries will be saved
