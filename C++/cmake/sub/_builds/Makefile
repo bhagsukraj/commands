@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ravi/git/commands/C++/cmake
+CMAKE_SOURCE_DIR = /home/ravi/git/commands/C++/cmake/sub
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ravi/git/commands/C++/cmake/_builds
+CMAKE_BINARY_DIR = /home/ravi/git/commands/C++/cmake/sub/_builds
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ravi/git/commands/C++/cmake/_builds/CMakeFiles /home/ravi/git/commands/C++/cmake/_builds/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ravi/git/commands/C++/cmake/sub/_builds/CMakeFiles /home/ravi/git/commands/C++/cmake/sub/_builds/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ravi/git/commands/C++/cmake/_builds/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ravi/git/commands/C++/cmake/sub/_builds/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named firstcmake
-
-# Build rule for target.
-firstcmake: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 firstcmake
-.PHONY : firstcmake
-
-# fast build rule for target.
-firstcmake/fast:
-	$(MAKE) -f CMakeFiles/firstcmake.dir/build.make CMakeFiles/firstcmake.dir/build
-.PHONY : firstcmake/fast
-
-#=============================================================================
 # Target rules for targets named sub
 
 # Build rule for target.
@@ -133,35 +120,35 @@ sub: cmake_check_build_system
 
 # fast build rule for target.
 sub/fast:
-	$(MAKE) -f sub/CMakeFiles/sub.dir/build.make sub/CMakeFiles/sub.dir/build
+	$(MAKE) -f CMakeFiles/sub.dir/build.make CMakeFiles/sub.dir/build
 .PHONY : sub/fast
 
-firstcmake.o: firstcmake.cpp.o
+sub.o: sub.cpp.o
 
-.PHONY : firstcmake.o
+.PHONY : sub.o
 
 # target to build an object file
-firstcmake.cpp.o:
-	$(MAKE) -f CMakeFiles/firstcmake.dir/build.make CMakeFiles/firstcmake.dir/firstcmake.cpp.o
-.PHONY : firstcmake.cpp.o
+sub.cpp.o:
+	$(MAKE) -f CMakeFiles/sub.dir/build.make CMakeFiles/sub.dir/sub.cpp.o
+.PHONY : sub.cpp.o
 
-firstcmake.i: firstcmake.cpp.i
+sub.i: sub.cpp.i
 
-.PHONY : firstcmake.i
+.PHONY : sub.i
 
 # target to preprocess a source file
-firstcmake.cpp.i:
-	$(MAKE) -f CMakeFiles/firstcmake.dir/build.make CMakeFiles/firstcmake.dir/firstcmake.cpp.i
-.PHONY : firstcmake.cpp.i
+sub.cpp.i:
+	$(MAKE) -f CMakeFiles/sub.dir/build.make CMakeFiles/sub.dir/sub.cpp.i
+.PHONY : sub.cpp.i
 
-firstcmake.s: firstcmake.cpp.s
+sub.s: sub.cpp.s
 
-.PHONY : firstcmake.s
+.PHONY : sub.s
 
 # target to generate assembly for a file
-firstcmake.cpp.s:
-	$(MAKE) -f CMakeFiles/firstcmake.dir/build.make CMakeFiles/firstcmake.dir/firstcmake.cpp.s
-.PHONY : firstcmake.cpp.s
+sub.cpp.s:
+	$(MAKE) -f CMakeFiles/sub.dir/build.make CMakeFiles/sub.dir/sub.cpp.s
+.PHONY : sub.cpp.s
 
 # Help Target
 help:
@@ -171,11 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... firstcmake"
 	@echo "... sub"
-	@echo "... firstcmake.o"
-	@echo "... firstcmake.i"
-	@echo "... firstcmake.s"
+	@echo "... sub.o"
+	@echo "... sub.i"
+	@echo "... sub.s"
 .PHONY : help
 
 

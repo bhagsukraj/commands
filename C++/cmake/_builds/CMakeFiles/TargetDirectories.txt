@@ -1,3 +1,6 @@
 /home/ravi/git/commands/C++/cmake/_builds/CMakeFiles/edit_cache.dir
 /home/ravi/git/commands/C++/cmake/_builds/CMakeFiles/rebuild_cache.dir
 /home/ravi/git/commands/C++/cmake/_builds/CMakeFiles/firstcmake.dir
+/home/ravi/git/commands/C++/cmake/_builds/sub/CMakeFiles/edit_cache.dir
+/home/ravi/git/commands/C++/cmake/_builds/sub/CMakeFiles/rebuild_cache.dir
+/home/ravi/git/commands/C++/cmake/_builds/sub/CMakeFiles/sub.dir

@@ -97,6 +97,61 @@ clean: CMakeFiles/firstcmake.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory sub
+
+# Convenience name for "all" pass in the directory.
+sub/all: sub/CMakeFiles/sub.dir/all
+
+.PHONY : sub/all
+
+# Convenience name for "clean" pass in the directory.
+sub/clean: sub/CMakeFiles/sub.dir/clean
+
+.PHONY : sub/clean
+
+# Convenience name for "preinstall" pass in the directory.
+sub/preinstall:
+
+.PHONY : sub/preinstall
+
+#=============================================================================
+# Target rules for target sub/CMakeFiles/sub.dir
+
+# All Build rule for target.
+sub/CMakeFiles/sub.dir/all:
+	$(MAKE) -f sub/CMakeFiles/sub.dir/build.make sub/CMakeFiles/sub.dir/depend
+	$(MAKE) -f sub/CMakeFiles/sub.dir/build.make sub/CMakeFiles/sub.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ravi/git/commands/C++/cmake/_builds/CMakeFiles --progress-num=3,4 "Built target sub"
+.PHONY : sub/CMakeFiles/sub.dir/all
+
+# Include target in all.
+all: sub/CMakeFiles/sub.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+sub/CMakeFiles/sub.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ravi/git/commands/C++/cmake/_builds/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 sub/CMakeFiles/sub.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ravi/git/commands/C++/cmake/_builds/CMakeFiles 0
+.PHONY : sub/CMakeFiles/sub.dir/rule
+
+# Convenience name for target.
+sub: sub/CMakeFiles/sub.dir/rule
+
+.PHONY : sub
+
+# clean rule for target.
+sub/CMakeFiles/sub.dir/clean:
+	$(MAKE) -f sub/CMakeFiles/sub.dir/build.make sub/CMakeFiles/sub.dir/clean
+.PHONY : sub/CMakeFiles/sub.dir/clean
+
+# clean rule for target.
+clean: sub/CMakeFiles/sub.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

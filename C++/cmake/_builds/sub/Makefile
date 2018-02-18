@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ravi/git/commands/C++/cmake/_builds/CMakeFiles /home/ravi/git/commands/C++/cmake/_builds/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/ravi/git/commands/C++/cmake/_builds && $(CMAKE_COMMAND) -E cmake_progress_start /home/ravi/git/commands/C++/cmake/_builds/CMakeFiles /home/ravi/git/commands/C++/cmake/_builds/sub/CMakeFiles/progress.marks
+	cd /home/ravi/git/commands/C++/cmake/_builds && $(MAKE) -f CMakeFiles/Makefile2 sub/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ravi/git/commands/C++/cmake/_builds/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/ravi/git/commands/C++/cmake/_builds && $(MAKE) -f CMakeFiles/Makefile2 sub/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,71 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/ravi/git/commands/C++/cmake/_builds && $(MAKE) -f CMakeFiles/Makefile2 sub/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/ravi/git/commands/C++/cmake/_builds && $(MAKE) -f CMakeFiles/Makefile2 sub/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ravi/git/commands/C++/cmake/_builds && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named firstcmake
+# Convenience name for target.
+sub/CMakeFiles/sub.dir/rule:
+	cd /home/ravi/git/commands/C++/cmake/_builds && $(MAKE) -f CMakeFiles/Makefile2 sub/CMakeFiles/sub.dir/rule
+.PHONY : sub/CMakeFiles/sub.dir/rule
 
-# Build rule for target.
-firstcmake: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 firstcmake
-.PHONY : firstcmake
+# Convenience name for target.
+sub: sub/CMakeFiles/sub.dir/rule
 
-# fast build rule for target.
-firstcmake/fast:
-	$(MAKE) -f CMakeFiles/firstcmake.dir/build.make CMakeFiles/firstcmake.dir/build
-.PHONY : firstcmake/fast
-
-#=============================================================================
-# Target rules for targets named sub
-
-# Build rule for target.
-sub: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sub
 .PHONY : sub
 
 # fast build rule for target.
 sub/fast:
-	$(MAKE) -f sub/CMakeFiles/sub.dir/build.make sub/CMakeFiles/sub.dir/build
+	cd /home/ravi/git/commands/C++/cmake/_builds && $(MAKE) -f sub/CMakeFiles/sub.dir/build.make sub/CMakeFiles/sub.dir/build
 .PHONY : sub/fast
 
-firstcmake.o: firstcmake.cpp.o
+sub.o: sub.cpp.o
 
-.PHONY : firstcmake.o
+.PHONY : sub.o
 
 # target to build an object file
-firstcmake.cpp.o:
-	$(MAKE) -f CMakeFiles/firstcmake.dir/build.make CMakeFiles/firstcmake.dir/firstcmake.cpp.o
-.PHONY : firstcmake.cpp.o
+sub.cpp.o:
+	cd /home/ravi/git/commands/C++/cmake/_builds && $(MAKE) -f sub/CMakeFiles/sub.dir/build.make sub/CMakeFiles/sub.dir/sub.cpp.o
+.PHONY : sub.cpp.o
 
-firstcmake.i: firstcmake.cpp.i
+sub.i: sub.cpp.i
 
-.PHONY : firstcmake.i
+.PHONY : sub.i
 
 # target to preprocess a source file
-firstcmake.cpp.i:
-	$(MAKE) -f CMakeFiles/firstcmake.dir/build.make CMakeFiles/firstcmake.dir/firstcmake.cpp.i
-.PHONY : firstcmake.cpp.i
+sub.cpp.i:
+	cd /home/ravi/git/commands/C++/cmake/_builds && $(MAKE) -f sub/CMakeFiles/sub.dir/build.make sub/CMakeFiles/sub.dir/sub.cpp.i
+.PHONY : sub.cpp.i
 
-firstcmake.s: firstcmake.cpp.s
+sub.s: sub.cpp.s
 
-.PHONY : firstcmake.s
+.PHONY : sub.s
 
 # target to generate assembly for a file
-firstcmake.cpp.s:
-	$(MAKE) -f CMakeFiles/firstcmake.dir/build.make CMakeFiles/firstcmake.dir/firstcmake.cpp.s
-.PHONY : firstcmake.cpp.s
+sub.cpp.s:
+	cd /home/ravi/git/commands/C++/cmake/_builds && $(MAKE) -f sub/CMakeFiles/sub.dir/build.make sub/CMakeFiles/sub.dir/sub.cpp.s
+.PHONY : sub.cpp.s
 
 # Help Target
 help:
@@ -171,11 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... firstcmake"
 	@echo "... sub"
-	@echo "... firstcmake.o"
-	@echo "... firstcmake.i"
-	@echo "... firstcmake.s"
+	@echo "... sub.o"
+	@echo "... sub.i"
+	@echo "... sub.s"
 .PHONY : help
 
 
@@ -187,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ravi/git/commands/C++/cmake/_builds && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
