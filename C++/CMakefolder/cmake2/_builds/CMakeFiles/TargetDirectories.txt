@@ -1,0 +1,2 @@
+/home/ravi/git/commands/C++/CMakefolder/cmake2/_builds/CMakeFiles/edit_cache.dir
+/home/ravi/git/commands/C++/CMakefolder/cmake2/_builds/CMakeFiles/rebuild_cache.dir
