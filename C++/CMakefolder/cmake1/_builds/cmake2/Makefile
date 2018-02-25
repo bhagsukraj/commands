@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/ravi/git/commands/C++/CMakefolder/cmake1/_builds
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -78,16 +67,27 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ravi/git/commands/C++/CMakefolder/cmake1/_builds/CMakeFiles /home/ravi/git/commands/C++/CMakefolder/cmake1/_builds/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/ravi/git/commands/C++/CMakefolder/cmake1/_builds && $(CMAKE_COMMAND) -E cmake_progress_start /home/ravi/git/commands/C++/CMakefolder/cmake1/_builds/CMakeFiles /home/ravi/git/commands/C++/CMakefolder/cmake1/_builds/cmake2/CMakeFiles/progress.marks
+	cd /home/ravi/git/commands/C++/CMakefolder/cmake1/_builds && $(MAKE) -f CMakeFiles/Makefile2 cmake2/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ravi/git/commands/C++/CMakefolder/cmake1/_builds/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/ravi/git/commands/C++/CMakefolder/cmake1/_builds && $(MAKE) -f CMakeFiles/Makefile2 cmake2/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,71 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/ravi/git/commands/C++/CMakefolder/cmake1/_builds && $(MAKE) -f CMakeFiles/Makefile2 cmake2/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/ravi/git/commands/C++/CMakefolder/cmake1/_builds && $(MAKE) -f CMakeFiles/Makefile2 cmake2/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ravi/git/commands/C++/CMakefolder/cmake1/_builds && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named prog1
+# Convenience name for target.
+cmake2/CMakeFiles/prog2.dir/rule:
+	cd /home/ravi/git/commands/C++/CMakefolder/cmake1/_builds && $(MAKE) -f CMakeFiles/Makefile2 cmake2/CMakeFiles/prog2.dir/rule
+.PHONY : cmake2/CMakeFiles/prog2.dir/rule
 
-# Build rule for target.
-prog1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 prog1
-.PHONY : prog1
+# Convenience name for target.
+prog2: cmake2/CMakeFiles/prog2.dir/rule
 
-# fast build rule for target.
-prog1/fast:
-	$(MAKE) -f CMakeFiles/prog1.dir/build.make CMakeFiles/prog1.dir/build
-.PHONY : prog1/fast
-
-#=============================================================================
-# Target rules for targets named prog2
-
-# Build rule for target.
-prog2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 prog2
 .PHONY : prog2
 
 # fast build rule for target.
 prog2/fast:
-	$(MAKE) -f cmake2/CMakeFiles/prog2.dir/build.make cmake2/CMakeFiles/prog2.dir/build
+	cd /home/ravi/git/commands/C++/CMakefolder/cmake1/_builds && $(MAKE) -f cmake2/CMakeFiles/prog2.dir/build.make cmake2/CMakeFiles/prog2.dir/build
 .PHONY : prog2/fast
 
-prog1.o: prog1.cpp.o
+prog2.o: prog2.cpp.o
 
-.PHONY : prog1.o
+.PHONY : prog2.o
 
 # target to build an object file
-prog1.cpp.o:
-	$(MAKE) -f CMakeFiles/prog1.dir/build.make CMakeFiles/prog1.dir/prog1.cpp.o
-.PHONY : prog1.cpp.o
+prog2.cpp.o:
+	cd /home/ravi/git/commands/C++/CMakefolder/cmake1/_builds && $(MAKE) -f cmake2/CMakeFiles/prog2.dir/build.make cmake2/CMakeFiles/prog2.dir/prog2.cpp.o
+.PHONY : prog2.cpp.o
 
-prog1.i: prog1.cpp.i
+prog2.i: prog2.cpp.i
 
-.PHONY : prog1.i
+.PHONY : prog2.i
 
 # target to preprocess a source file
-prog1.cpp.i:
-	$(MAKE) -f CMakeFiles/prog1.dir/build.make CMakeFiles/prog1.dir/prog1.cpp.i
-.PHONY : prog1.cpp.i
+prog2.cpp.i:
+	cd /home/ravi/git/commands/C++/CMakefolder/cmake1/_builds && $(MAKE) -f cmake2/CMakeFiles/prog2.dir/build.make cmake2/CMakeFiles/prog2.dir/prog2.cpp.i
+.PHONY : prog2.cpp.i
 
-prog1.s: prog1.cpp.s
+prog2.s: prog2.cpp.s
 
-.PHONY : prog1.s
+.PHONY : prog2.s
 
 # target to generate assembly for a file
-prog1.cpp.s:
-	$(MAKE) -f CMakeFiles/prog1.dir/build.make CMakeFiles/prog1.dir/prog1.cpp.s
-.PHONY : prog1.cpp.s
+prog2.cpp.s:
+	cd /home/ravi/git/commands/C++/CMakefolder/cmake1/_builds && $(MAKE) -f cmake2/CMakeFiles/prog2.dir/build.make cmake2/CMakeFiles/prog2.dir/prog2.cpp.s
+.PHONY : prog2.cpp.s
 
 # Help Target
 help:
@@ -169,13 +158,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... prog1"
+	@echo "... edit_cache"
 	@echo "... prog2"
-	@echo "... prog1.o"
-	@echo "... prog1.i"
-	@echo "... prog1.s"
+	@echo "... prog2.o"
+	@echo "... prog2.i"
+	@echo "... prog2.s"
 .PHONY : help
 
 
@@ -187,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ravi/git/commands/C++/CMakefolder/cmake1/_builds && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
