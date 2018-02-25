@@ -12,3 +12,12 @@ message("Source: ${PROJECT_SOURCE_DIR}")
 message("Target: ${PROJECT_BINARY_DIR}")
 
 add_subdirectory(cmake2)
+
+message("Regular variable : ${abc}")
+message("Cache variable : ${xyz}")
+
+set(abc "123")
+set(xyz "321" CACHE STRING "")
+
+message("Regular variable : ${abc}")
+message("Cache variable : ${xyz}")

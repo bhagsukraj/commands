@@ -177,6 +177,8 @@ cmake2_BINARY_DIR:STATIC=/home/ravi/git/commands/C++/CMakefolder/cmake1/_builds/
 //Value Computed by CMake
 cmake2_SOURCE_DIR:STATIC=/home/ravi/git/commands/C++/CMakefolder/cmake1/cmake2
 
+xyz:STRING=321
+
 
 ########################
 # INTERNAL cache entries
