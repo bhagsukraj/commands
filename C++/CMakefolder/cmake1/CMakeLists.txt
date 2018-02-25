@@ -21,3 +21,10 @@ set(xyz "321" CACHE STRING "")
 
 message("Regular variable : ${abc}")
 message("Cache variable : ${xyz}")
+
+macro(modify_abc)
+  set(abc "Wonderful abc")
+  message("Regular variable ${abc}")
+endmacro()
+
+modify_abc()
