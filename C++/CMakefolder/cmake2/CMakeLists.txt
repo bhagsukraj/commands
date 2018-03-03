@@ -17,5 +17,5 @@ message("Value of c is ${C}")
 
 set(A "Hello India" CACHE STRING "" FORCE)
 
-
+set(ENV{USERNAME} "Ravi Kiran")
 message("Environment variable USERNAME: $ENV{USERNAME}")

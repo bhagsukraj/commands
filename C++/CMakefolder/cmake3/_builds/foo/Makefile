@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ravi/git/commands/C++/CMakefolder/cmake3/_builds/CMakeFiles /home/ravi/git/commands/C++/CMakefolder/cmake3/_builds/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/ravi/git/commands/C++/CMakefolder/cmake3/_builds && $(CMAKE_COMMAND) -E cmake_progress_start /home/ravi/git/commands/C++/CMakefolder/cmake3/_builds/CMakeFiles /home/ravi/git/commands/C++/CMakefolder/cmake3/_builds/foo/CMakeFiles/progress.marks
+	cd /home/ravi/git/commands/C++/CMakefolder/cmake3/_builds && $(MAKE) -f CMakeFiles/Makefile2 foo/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ravi/git/commands/C++/CMakefolder/cmake3/_builds/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/ravi/git/commands/C++/CMakefolder/cmake3/_builds && $(MAKE) -f CMakeFiles/Makefile2 foo/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,84 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/ravi/git/commands/C++/CMakefolder/cmake3/_builds && $(MAKE) -f CMakeFiles/Makefile2 foo/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/ravi/git/commands/C++/CMakefolder/cmake3/_builds && $(MAKE) -f CMakeFiles/Makefile2 foo/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ravi/git/commands/C++/CMakefolder/cmake3/_builds && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named hello
+# Convenience name for target.
+foo/CMakeFiles/foo.dir/rule:
+	cd /home/ravi/git/commands/C++/CMakefolder/cmake3/_builds && $(MAKE) -f CMakeFiles/Makefile2 foo/CMakeFiles/foo.dir/rule
+.PHONY : foo/CMakeFiles/foo.dir/rule
 
-# Build rule for target.
-hello: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hello
-.PHONY : hello
+# Convenience name for target.
+foo: foo/CMakeFiles/foo.dir/rule
 
-# fast build rule for target.
-hello/fast:
-	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
-.PHONY : hello/fast
-
-#=============================================================================
-# Target rules for targets named boo
-
-# Build rule for target.
-boo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 boo
-.PHONY : boo
-
-# fast build rule for target.
-boo/fast:
-	$(MAKE) -f boo/CMakeFiles/boo.dir/build.make boo/CMakeFiles/boo.dir/build
-.PHONY : boo/fast
-
-#=============================================================================
-# Target rules for targets named foo
-
-# Build rule for target.
-foo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 foo
 .PHONY : foo
 
 # fast build rule for target.
 foo/fast:
-	$(MAKE) -f foo/CMakeFiles/foo.dir/build.make foo/CMakeFiles/foo.dir/build
+	cd /home/ravi/git/commands/C++/CMakefolder/cmake3/_builds && $(MAKE) -f foo/CMakeFiles/foo.dir/build.make foo/CMakeFiles/foo.dir/build
 .PHONY : foo/fast
 
-hello.o: hello.cpp.o
+foo.o: foo.cpp.o
 
-.PHONY : hello.o
+.PHONY : foo.o
 
 # target to build an object file
-hello.cpp.o:
-	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/hello.cpp.o
-.PHONY : hello.cpp.o
+foo.cpp.o:
+	cd /home/ravi/git/commands/C++/CMakefolder/cmake3/_builds && $(MAKE) -f foo/CMakeFiles/foo.dir/build.make foo/CMakeFiles/foo.dir/foo.cpp.o
+.PHONY : foo.cpp.o
 
-hello.i: hello.cpp.i
+foo.i: foo.cpp.i
 
-.PHONY : hello.i
+.PHONY : foo.i
 
 # target to preprocess a source file
-hello.cpp.i:
-	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/hello.cpp.i
-.PHONY : hello.cpp.i
+foo.cpp.i:
+	cd /home/ravi/git/commands/C++/CMakefolder/cmake3/_builds && $(MAKE) -f foo/CMakeFiles/foo.dir/build.make foo/CMakeFiles/foo.dir/foo.cpp.i
+.PHONY : foo.cpp.i
 
-hello.s: hello.cpp.s
+foo.s: foo.cpp.s
 
-.PHONY : hello.s
+.PHONY : foo.s
 
 # target to generate assembly for a file
-hello.cpp.s:
-	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/hello.cpp.s
-.PHONY : hello.cpp.s
+foo.cpp.s:
+	cd /home/ravi/git/commands/C++/CMakefolder/cmake3/_builds && $(MAKE) -f foo/CMakeFiles/foo.dir/build.make foo/CMakeFiles/foo.dir/foo.cpp.s
+.PHONY : foo.cpp.s
 
 # Help Target
 help:
@@ -184,12 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... hello"
-	@echo "... boo"
 	@echo "... foo"
-	@echo "... hello.o"
-	@echo "... hello.i"
-	@echo "... hello.s"
+	@echo "... foo.o"
+	@echo "... foo.i"
+	@echo "... foo.s"
 .PHONY : help
 
 
@@ -201,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ravi/git/commands/C++/CMakefolder/cmake3/_builds && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/ravi/git/commands/C++/CMakefolder/cmake3/_builds
 CMakeFiles/hello.dir/all:
 	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/depend
 	$(MAKE) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ravi/git/commands/C++/CMakefolder/cmake3/_builds/CMakeFiles --progress-num=1,2 "Built target hello"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ravi/git/commands/C++/CMakefolder/cmake3/_builds/CMakeFiles --progress-num=5,6 "Built target hello"
 .PHONY : CMakeFiles/hello.dir/all
 
 # Include target in all.
@@ -93,6 +93,116 @@ CMakeFiles/hello.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/hello.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory boo
+
+# Convenience name for "all" pass in the directory.
+boo/all: boo/CMakeFiles/boo.dir/all
+
+.PHONY : boo/all
+
+# Convenience name for "clean" pass in the directory.
+boo/clean: boo/CMakeFiles/boo.dir/clean
+
+.PHONY : boo/clean
+
+# Convenience name for "preinstall" pass in the directory.
+boo/preinstall:
+
+.PHONY : boo/preinstall
+
+#=============================================================================
+# Target rules for target boo/CMakeFiles/boo.dir
+
+# All Build rule for target.
+boo/CMakeFiles/boo.dir/all:
+	$(MAKE) -f boo/CMakeFiles/boo.dir/build.make boo/CMakeFiles/boo.dir/depend
+	$(MAKE) -f boo/CMakeFiles/boo.dir/build.make boo/CMakeFiles/boo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ravi/git/commands/C++/CMakefolder/cmake3/_builds/CMakeFiles --progress-num=1,2 "Built target boo"
+.PHONY : boo/CMakeFiles/boo.dir/all
+
+# Include target in all.
+all: boo/CMakeFiles/boo.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+boo/CMakeFiles/boo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ravi/git/commands/C++/CMakefolder/cmake3/_builds/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 boo/CMakeFiles/boo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ravi/git/commands/C++/CMakefolder/cmake3/_builds/CMakeFiles 0
+.PHONY : boo/CMakeFiles/boo.dir/rule
+
+# Convenience name for target.
+boo: boo/CMakeFiles/boo.dir/rule
+
+.PHONY : boo
+
+# clean rule for target.
+boo/CMakeFiles/boo.dir/clean:
+	$(MAKE) -f boo/CMakeFiles/boo.dir/build.make boo/CMakeFiles/boo.dir/clean
+.PHONY : boo/CMakeFiles/boo.dir/clean
+
+# clean rule for target.
+clean: boo/CMakeFiles/boo.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory foo
+
+# Convenience name for "all" pass in the directory.
+foo/all: foo/CMakeFiles/foo.dir/all
+
+.PHONY : foo/all
+
+# Convenience name for "clean" pass in the directory.
+foo/clean: foo/CMakeFiles/foo.dir/clean
+
+.PHONY : foo/clean
+
+# Convenience name for "preinstall" pass in the directory.
+foo/preinstall:
+
+.PHONY : foo/preinstall
+
+#=============================================================================
+# Target rules for target foo/CMakeFiles/foo.dir
+
+# All Build rule for target.
+foo/CMakeFiles/foo.dir/all:
+	$(MAKE) -f foo/CMakeFiles/foo.dir/build.make foo/CMakeFiles/foo.dir/depend
+	$(MAKE) -f foo/CMakeFiles/foo.dir/build.make foo/CMakeFiles/foo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ravi/git/commands/C++/CMakefolder/cmake3/_builds/CMakeFiles --progress-num=3,4 "Built target foo"
+.PHONY : foo/CMakeFiles/foo.dir/all
+
+# Include target in all.
+all: foo/CMakeFiles/foo.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+foo/CMakeFiles/foo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ravi/git/commands/C++/CMakefolder/cmake3/_builds/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 foo/CMakeFiles/foo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ravi/git/commands/C++/CMakefolder/cmake3/_builds/CMakeFiles 0
+.PHONY : foo/CMakeFiles/foo.dir/rule
+
+# Convenience name for target.
+foo: foo/CMakeFiles/foo.dir/rule
+
+.PHONY : foo
+
+# clean rule for target.
+foo/CMakeFiles/foo.dir/clean:
+	$(MAKE) -f foo/CMakeFiles/foo.dir/build.make foo/CMakeFiles/foo.dir/clean
+.PHONY : foo/CMakeFiles/foo.dir/clean
+
+# clean rule for target.
+clean: foo/CMakeFiles/foo.dir/clean
 
 .PHONY : clean
 
