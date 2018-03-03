@@ -28,3 +28,9 @@ macro(modify_abc)
 endmacro()
 
 modify_abc()
+
+function(print_func xyz)
+  message("The value of variable xyz is ${xyz}")
+endfunction()
+
+print_func(xyz)
