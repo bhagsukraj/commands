@@ -9,9 +9,7 @@ namespace name1{
 }
 
 int main(){
-
   cout<< name1::i << endl;
   name1::prin( 20 );
-
   return 0;
 }
