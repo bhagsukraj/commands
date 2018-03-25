@@ -8,3 +8,6 @@ add_executable(hello hello.cpp)
 include(ProcessorCount)
 ProcessorCount(N)
 message("Number of processors: ${N}")
+
+enable_testing()
+add_test(NAME hello COMMAND hello)
